@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FaultItemDetailActivity" >
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/buttonStyle"
+            android:id="@+id/catalog_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目    录" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:id="@+id/return_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返    回" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:id="@+id/pageup_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一条" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:id="@+id/pagedown_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一条" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/line"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fault_item_detail"
+                style="@style/mainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/first"
+                style="@style/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/first" />
+
+            <TextView
+                android:id="@+id/fault_item_detail_first"
+                style="@style/contentView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/second"
+                style="@style/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/second" />
+
+            <TextView
+                android:id="@+id/fault_item_detail_second"
+                style="@style/contentView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/third"
+                style="@style/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/third" />
+
+            <TextView
+                android:id="@+id/fault_item_detail_third"
+                style="@style/contentView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

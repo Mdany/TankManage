@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.monsterlab.main_activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="org.monsterlab.main_activity.MainActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.PhotoActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.FaultDiectoryActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.MaintainDiectoryActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.FaultItemActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.MaintainItemActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.FaultItemDetailActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.MaintainItemDetailActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.ImageEnlargedActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.FaultMiddleActivity" >
+        </activity>
+        <activity android:name="org.monsterlab.main_activity.MaintainMiddleActivity" >
+        </activity>
+        <activity
+            android:name="org.monsterlab.main_activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.monsterlab.main_activity.UpdatePasswordActivity"
+            android:label="@string/title_activity_update" >
+        </activity>
+    </application>
+
+</manifest>

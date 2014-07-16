@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">装备维护数据查询系统</string>
+    <string name="action_settings">主菜单</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tank_fault">故障数据库</string>
+    <string name="tank_maintain">维护指导书</string>
+    <string name="tank_sendphoto">传送图片</string>
+    <string name="logout">退出</string>
+    <string name="copyright">步兵第46师装甲团</string>
+    <string name="action_descend">上一层</string>
+    <string name="first">一、现象及实质</string>
+    <string name="second">二、原因分析</string>
+    <string name="third">三、检查排除方法</string>
+    <string name="date">2014年6月</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_update">UpdateActivity</string>
+
+</resources>

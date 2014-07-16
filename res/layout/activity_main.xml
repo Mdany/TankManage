@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgphoto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/fault_inquiry"
+            style="@style/mainstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tank_fault" />
+
+        <Button
+            android:id="@+id/maintain_guide"
+            style="@style/mainstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tank_maintain" />
+
+        <Button
+            android:id="@+id/photo_send"
+            style="@style/mainstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tank_sendphoto" />
+
+        <Button
+            android:id="@+id/logout"
+            style="@style/mainstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout" />
+        <Button
+            android:id="@+id/chang_pwd"
+            style="@style/mainstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="密码管理" />
+    </LinearLayout>
+
+    
+
+    <TextView
+        android:id="@+id/dates"
+        style="@style/mainstyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/date" />
+    
+    <TextView
+        style="@style/mainstyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dates"
+        android:layout_centerHorizontal="true"
+        android:text="@string/copyright" />
+
+</RelativeLayout>
